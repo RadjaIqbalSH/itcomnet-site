@@ -6,7 +6,7 @@ module.exports = {
     title: `itcomnet-site`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp","gatsby-plugin-postcss", {
+  plugins: ["gatsby-plugin-image","gatsby-plugin-netlify", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp","gatsby-plugin-postcss", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
