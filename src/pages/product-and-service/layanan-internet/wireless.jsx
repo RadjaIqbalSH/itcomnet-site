@@ -47,4 +47,4 @@ const Wireless = () => {
 
 export default Wireless
 
-export const Head = () => <title>Product | Wireless</title>
+export const Head = () => <title>ITCOMNet | Wireless</title>

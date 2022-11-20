@@ -46,4 +46,4 @@ const Cloud = () => {
 
 export default Cloud
 
-export const Head = () => <title>Services | Cloud</title>
+export const Head = () => <title>ITCOMNet | Cloud</title>

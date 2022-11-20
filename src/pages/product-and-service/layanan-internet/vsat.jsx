@@ -38,4 +38,4 @@ const Vsat = () => {
 
 export default Vsat
 
-export const Head = () => <title>Product | VSAT</title>
+export const Head = () => <title>ITCOMNet | VSAT</title>

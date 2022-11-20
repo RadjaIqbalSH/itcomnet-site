@@ -12,4 +12,4 @@ const AboutUsPage = () => {
 
 export default AboutUsPage
 
-export const Head = () => <title>About Us</title>
+export const Head = () => <title>ITCOMNet | About Us</title>

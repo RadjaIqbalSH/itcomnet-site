@@ -66,4 +66,4 @@ const BundlingPackage = () => {
 
 export default BundlingPackage
 
-export const Head = () => <title>Bundling Package</title>
+export const Head = () => <title>ITCOMNet | Bundling Package</title>

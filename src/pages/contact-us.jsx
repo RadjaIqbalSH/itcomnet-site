@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from "../layouts"
+import { FaWhatsapp } from "react-icons/fa";
 import { HiOutlineLocationMarker, HiOutlineMailOpen, HiOutlinePhone } from "react-icons/hi";
 
 const ContactUs = () => {
@@ -9,7 +10,7 @@ const ContactUs = () => {
                 <h1 className="text-[36px] font-semibold mb-4">Contact Us</h1>
                 <div className="border-t-[#F18A02] border-t-4 mb-16 w-52"></div>
             </div>
-            <div className="mx-auto max-w-[600px] flex flex-col space-y-6 bg-white h-auto py-[100px]">
+            <div className="mx-auto max-w-[600px] flex flex-col bg-white h-auto py-[100px]">
                 <div className="w-full p-8 bg-white rounded-lg ">
                     <div className="flex space-x-4">
                         <HiOutlineLocationMarker className="text-4xl text-[#8FD1CC] flex-none"/>
@@ -35,6 +36,15 @@ const ContactUs = () => {
                         <div className="flex flex-col mt-2">
                             <p className="mb-4 font-semibold">PHONE</p>
                             <p>022-54418755</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full p-8 bg-white rounded-lg ">
+                    <div className="flex space-x-4">
+                        <FaWhatsapp className="text-4xl text-[#8FD1CC] flex-none"/>
+                        <div className="flex flex-col mt-2">
+                            <p className="mb-4 font-semibold">WHATSAPP</p>
+                            <p>0821-2002-2242</p>
                         </div>
                     </div>
                 </div>
@@ -64,4 +74,4 @@ const ContactUs = () => {
 
 export default ContactUs
 
-export const Head = () => <title>Contact Us</title>
+export const Head = () => <title>ITCOMNet | Contact Us</title>

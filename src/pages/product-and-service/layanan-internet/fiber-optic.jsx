@@ -44,4 +44,4 @@ const FiberOptic = () => {
 
 export default FiberOptic
 
-export const Head = () => <title>Product | Fiber Optic</title>
+export const Head = () => <title>ITCOMNet | Fiber Optic</title>

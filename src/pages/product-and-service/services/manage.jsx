@@ -46,4 +46,4 @@ const Manage = () => {
 
 export default Manage
 
-export const Head = () => <title>Services | Manage</title>
+export const Head = () => <title>ITCOMNet | Manage</title>

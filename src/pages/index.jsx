@@ -12,4 +12,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home</title>
+export const Head = () => <title>ITCOMNet | Home</title>
