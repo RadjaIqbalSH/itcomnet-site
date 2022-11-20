@@ -15,7 +15,7 @@ const Home = () => {
                     <div className="w-full h-auto flex flex-col justify-center ">
                         <h1 className="font-bold text-[28px] mb-4">We Create Benefits and Benefits is Yours</h1>
                         <p className="font-light text-justify">
-                            PT. ITCOMNET INDOHADETAMA memberikan berbagai solusi internet yang handal dan berkecepatan tinggi 
+                            <b className='font-semibold'>PT. ITCOMNET INDOHADETAMA</b> memberikan berbagai solusi internet yang handal dan berkecepatan tinggi 
                             dengan layanan serta dukungan support service dengan dedikasi dan profesionalisme yang tinggi.
                         </p>
                     </div>
