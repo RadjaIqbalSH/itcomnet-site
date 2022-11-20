@@ -48,8 +48,9 @@ const NavBar = () => {
     <>
       <div className={[isScrollDown ? 'bg-white shadow' : '', "w-full fixed top-0 transition-all duration-600"].join(' ')}>
         <div id='navbar' className='hidden mx-auto max-w-[1044px] w-auto lg:flex items-center justify-center space-x-8 h-[90px]'>
-          <Link to="/">
+          <Link className='flex' to="/">
             <StaticImage class='w-16' src="../images/logo.png" alt="Logo" />
+            <p className='font-semibold ml-2'>ITCOMNet</p>
           </Link>
           <Link className={['hover:text-orange-400', pathList.home === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/">Home</Link>
           <Link className={['hover:text-orange-400', pathList.aboutUs === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/about-us">About Us</Link>
@@ -117,8 +118,9 @@ const NavBar = () => {
       <div className='relative'>
         <div className='fixed lg:hidden top-0 w-full h-16 px-8 bg-white shadow-lg flex items-center justify-between z-10'>
           <TfiMenu className='text-xl' onClick={handleMenu}/>
-          <Link to="/">
+          <Link className='flex' to="/">
             <StaticImage class='w-8' src="../images/logo.png" alt="Logo" />
+            <p className='font-semibold text-[8px] ml-1'>ITCOMNet</p>
           </Link>
         </div>
         <div className={['fixed w-full h-[100vh] bg-white z-20 top-0 transition-all duration-300', isActive ? 'left-0' : '-left-full'].join(' ')}>
