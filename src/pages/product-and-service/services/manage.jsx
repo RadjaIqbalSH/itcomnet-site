@@ -16,7 +16,7 @@ const Manage = () => {
                 <h4 className="font-semibold py-4">Layanan :</h4>
                 <ul className="pl-[18px] list-decimal list-outside">
                     <li className="text-justify">Manage Access Point / WiFi</li>
-                    <li className="text-justify">ManApplicationage CCTV</li>
+                    <li className="text-justify">Manage CCTV</li>
                     <li className="text-justify">Manage Network</li>
                     <li className="text-justify">Manage Mailserver</li>
                 </ul>
