@@ -144,7 +144,7 @@ const NavBar = () => {
             </div>
             <Link className={['border-b-2 py-4 hover:text-orange-400', pathList.bundlingPackage === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/product-and-service/bundling-package">Bundling Package</Link>
             <div className={[ path.includes(pathList.services) ? 'text-orange-400 text-lg' : 'text-black', 'flex justify-between items-center border-b-2 py-4 w-full'].join(' ')} onClick={()=> setIsService(!isService)}>
-              <p >Layanan Internet</p>
+              <p >Services</p>
               <HiChevronLeft className={['transition-all',isService ? '-rotate-90' : 'rotate-0'].join(' ')}/>
             </div>
             <div className={['flex flex-col bg-gray-100 overflow-hidden transition-all', isService ? 'min-h-[117px]' : 'h-0'].join(' ')}>

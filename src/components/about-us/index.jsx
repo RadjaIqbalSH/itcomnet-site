@@ -10,10 +10,10 @@ const AboutUs = () => {
                     <div className="border-t-[#F18A02] border-t-4 mb-16 w-52 mx-auto"></div>
                     {/* <h1 className="text-[36px] font-semibold mb-12 border-b-[#F18A02] border-b-4 w-fit mx-auto">About Us</h1> */}
                     <p className='text-justify'>
-                        PT.ITCOMNET INDOHADETAMA adalah perusahaan yang bergerak dibidang informasi, komunikasi dan teknologi semenjak tahun 2018
+                        PT.ITCOMNET INDOHADETAMA adalah perusahaan yang bergerak dibidang informasi, komunikasi dan teknologi semenjak tahun 2018.
                         Didukung oleh sumber daya yang memiliki kompetensi tinggi, PT.ITCOMNET INDOHADETAMA memberikan berbagai solusi layanan informasi, 
                         komunikasi dan terknologi dalam suatu bentuk kerjasama, dimana kepuasan costumer adalah tujuan utama dari bisnis ini.
-                        Kami menyakini bahwa kami dapat memberikan kualitas, konsistensi dan layanan service terbaik untuk costumer.
+                        Kami meyakini bahwa kami dapat memberikan kualitas, konsistensi dan layanan service terbaik untuk costumer.
                     </p>
                 </div>
                 <div className="max-w-[1044px] px-8 lg:px-0 pt-[100px] pb-[200px] mx-auto text-center">
@@ -23,7 +23,7 @@ const AboutUs = () => {
                         <div className='card-custom w-full text-start rounded-lg bg-white p-12 shadow-lg'>
                             <h4 className="font-semibold mb-8 text-[30px] text-blue-500">Visi</h4>
                             <p className='text-justify'>
-                                Visi kami adalah menjadi perusahaan penyedia dibidang teknologi infromasi komunikasi 
+                                Visi kami adalah menjadi perusahaan penyedia dibidang teknologi informasi komunikasi 
                                 dan juga teknologi terkemuka dengan pelayanan terbaik dalam memberikan solusi terpercaya 
                                 dan bernilai tambah bagi pelanggan dan stakeholder.
                             </p>
