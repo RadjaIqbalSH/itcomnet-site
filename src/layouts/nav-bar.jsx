@@ -16,6 +16,9 @@ const pathList = {
   bundlingPackage: '/product-and-service/bundling-package/',
   services: '/product-and-service/services',
   cloud: '/product-and-service/services/cloud/',
+  onGridOffGrid: '/product-and-service/services/on-grid-off-grid-and-hybrid-pv-system/',
+  roofTop: '/product-and-service/services/solar-rooftop-retail-and-industrial/',
+  another: '/product-and-service/services/another-pv-application/',
   manage: '/product-and-service/services/manage/',
   contactUs: '/contact-us/',
 }
@@ -46,16 +49,16 @@ const NavBar = () => {
 
   return (
     <>
-      <div className={[isScrollDown ? 'bg-white shadow' : '', "w-full fixed top-0 transition-all duration-600"].join(' ')}>
+      <div className={[isScrollDown ? 'bg-white shadow' : '', "w-full fixed top-0 transition-all duration-600 z-50"].join(' ')}>
         <div id='navbar' className='hidden mx-auto max-w-[1044px] w-auto lg:flex items-center justify-center space-x-8 h-[90px]'>
           <Link className='flex' to="/">
             <StaticImage class='w-16' src="../images/logo.png" alt="Logo" />
             <p className='font-semibold ml-2'>ITCOMNet</p>
           </Link>
-          <Link className={['hover:text-orange-400', pathList.home === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/">Home</Link>
-          <Link className={['hover:text-orange-400', pathList.aboutUs === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/about-us">About Us</Link>
+          <Link className={['hover:text-orange-400 transition-all duration-400', pathList.home === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/">Home</Link>
+          <Link className={['hover:text-orange-400 transition-all duration-400', pathList.aboutUs === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/about-us">About Us</Link>
           <div className='dropdown h-full'>
-            <div className={['hover:text-orange-400', path.includes(pathList.layananInternet) ? 'text-orange-400' : 'text-black', 'cursor-pointer', 'flex items-center space-x-2 h-full'].join(' ')}>
+            <div className={['hover:text-orange-400 transition-all duration-400', path.includes(pathList.layananInternet) ? 'text-orange-400' : 'text-black', 'cursor-pointer', 'flex items-center space-x-2 h-full'].join(' ')}>
               <p >Layanan Internet</p>
               <HiChevronDown/>
             </div>
@@ -65,18 +68,21 @@ const NavBar = () => {
               <Link className={['hover:text-orange-400', 'px-6 pb-6', pathList.vsat === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/product-and-service/layanan-internet/vsat">VSAT</Link>
             </div>
           </div>
-          <Link className={['hover:text-orange-400', pathList.bundlingPackage === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/product-and-service/bundling-package">Bundling Package</Link>
+          <Link className={['hover:text-orange-400 transition-all duration-400', pathList.bundlingPackage === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/product-and-service/bundling-package">Bundling Package</Link>
           <div className='dropdown h-full'>
-            <div className={['hover:text-orange-400', path.includes(pathList.services) ? 'text-orange-400' : 'text-black', 'cursor-pointer', 'flex items-center space-x-2 h-full'].join(' ')}>
+            <div className={['hover:text-orange-400 transition-all duration-400', path.includes(pathList.services) ? 'text-orange-400' : 'text-black', 'cursor-pointer', 'flex items-center space-x-2 h-full'].join(' ')}>
               <p>Services</p>
               <HiChevronDown/>
             </div>
-            <div className="dropdown-content w-[300px] bg-white shadow-xl rounded-lg transition-all">
-              <Link className={['hover:text-orange-400', pathList.cloud === path ? 'text-orange-400' : 'text-black', 'px-6 pt-6'].join(' ')} to="/product-and-service/services/cloud">Cloud Services (Web hosting, VPS, mailhosting, domain)</Link>
-              <Link className={['hover:text-orange-400', pathList.manage === path ? 'text-orange-400' : 'text-black', 'px-6 pt-4 pb-6'].join(' ')} to="/product-and-service/services/manage">Manage Service (Access Point, IoT, CCTV)</Link>
+            <div className="dropdown-content w-[250px] bg-white shadow-xl rounded-lg transition-all">
+              <Link className={['hover:text-orange-400 transition-all duration-400', pathList.onGridOffGrid === path ? 'text-orange-400' : 'text-black', 'px-6 pt-6'].join(' ')} to="/product-and-service/services/on-grid-off-grid-and-hybrid-pv-system">On - Grid, Off Grid & Hybrid Pv System</Link>
+              <Link className={['hover:text-orange-400 transition-all duration-400', pathList.roofTop === path ? 'text-orange-400' : 'text-black', 'px-6 pt-6'].join(' ')} to="/product-and-service/services/solar-rooftop-retail-and-industrial">Solar Rooftop Retail & Industrial</Link>
+              <Link className={['hover:text-orange-400 transition-all duration-400', pathList.another === path ? 'text-orange-400' : 'text-black', 'px-6 pt-6'].join(' ')} to="/product-and-service/services/another-pv-application">Another PV Application</Link>
+              <Link className={['hover:text-orange-400 transition-all duration-400', pathList.cloud === path ? 'text-orange-400' : 'text-black', 'px-6 py-6'].join(' ')} to="/product-and-service/services/cloud">Cloud Services (Web hosting, VPS, mailhosting, domain)</Link>
+              <Link className={['hover:text-orange-400 transition-all duration-400', pathList.manage === path ? 'text-orange-400' : 'text-black', 'px-6 pb-6'].join(' ')} to="/product-and-service/services/manage">Manage Service (Access Point, IoT, CCTV)</Link>
             </div>
           </div>
-          <Link className={['hover:text-orange-400', pathList.contactUs === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/contact-us">Contact Us</Link>
+          <Link className={['hover:text-orange-400 transition-all duration-400', pathList.contactUs === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/contact-us">Contact Us</Link>
         </div>
         
         <style>{`
@@ -96,7 +102,7 @@ const NavBar = () => {
           .dropdown-content {
             display: none;
             position: absolute;
-            z-index: 1;
+            z-index: 50;
           }
           
           /* Links inside the dropdown */
@@ -125,8 +131,9 @@ const NavBar = () => {
         </div>
         <div className={['fixed w-full h-[100vh] bg-white z-20 top-0 transition-all duration-300', isActive ? 'left-0' : '-left-full'].join(' ')}>
           <div className='flex justify-between items-center shadow p-8'>
-            <Link to="/">
-              <StaticImage class='w-10' src="../images/logo.png" alt="Logo" />
+            <Link className='flex' to="/">
+              <StaticImage class='w-8' src="../images/logo.png" alt="Logo" />
+              <p className='font-semibold text-[8px] ml-1'>ITCOMNet</p>
             </Link>
             <IoMdClose className='text-3xl' onClick={handleMenu}/>
           </div>
@@ -137,7 +144,7 @@ const NavBar = () => {
               <p >Layanan Internet</p>
               <HiChevronLeft className={['transition-all',isLayanan ? '-rotate-90' : 'rotate-0'].join(' ')}/>
             </div>
-            <div className={['flex flex-col bg-gray-100 overflow-hidden transition-all', isLayanan ? 'h-[150px]' : 'h-0'].join(' ')}>
+            <div className={['flex flex-col bg-gray-100 overflow-hidden transition-all duration-500', isLayanan ? 'h-[150px]' : 'h-0'].join(' ')}>
               <Link className={['hover:text-orange-400', 'px-6 pt-6', pathList.wireless === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/product-and-service/layanan-internet/wireless">Wireless</Link>
               <Link className={['hover:text-orange-400', 'px-6 py-4', pathList.fiberOptic === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/product-and-service/layanan-internet/fiber-optic">Fiber Optic</Link>
               <Link className={['hover:text-orange-400', 'px-6 pb-6', pathList.vsat === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/product-and-service/layanan-internet/vsat">VSAT</Link>
@@ -147,9 +154,12 @@ const NavBar = () => {
               <p >Services</p>
               <HiChevronLeft className={['transition-all',isService ? '-rotate-90' : 'rotate-0'].join(' ')}/>
             </div>
-            <div className={['flex flex-col bg-gray-100 overflow-hidden transition-all', isService ? 'min-h-[117px]' : 'h-0'].join(' ')}>
+            <div className={['flex flex-col bg-gray-100 overflow-hidden transition-all duration-500', isService ? 'h-[280px]' : 'h-0'].join(' ')}>
+              <Link className={['hover:text-orange-400', 'px-6 pt-6', pathList.onGridOffGrid === path ? 'text-orange-400' : 'text-black', 'px-6 pt-6'].join(' ')} to="/product-and-service/services/on-grid-off-grid-and-hybrid-pv-system">On - Grid, Off Grid & Hybrid Pv System</Link>
+              <Link className={['hover:text-orange-400', 'px-6 pt-6', pathList.roofTop === path ? 'text-orange-400' : 'text-black', 'px-6 pt-6'].join(' ')} to="/product-and-service/services/solar-rooftop-retail-and-industrial">Solar Rooftop Retail & Industrial</Link>
+              <Link className={['hover:text-orange-400', 'px-6 pt-6', pathList.another === path ? 'text-orange-400' : 'text-black', 'px-6 pt-6'].join(' ')} to="/product-and-service/services/another-pv-application">Another PV Application</Link>
               <Link className={['hover:text-orange-400', 'px-6 pt-6', pathList.cloud === path ? 'text-orange-400' : 'text-black', 'px-6 pt-6'].join(' ')} to="/product-and-service/services/cloud">Cloud Services (Web hosting, VPS, mailhosting, domain)</Link>
-              <Link className={['hover:text-orange-400', 'px-6 pt-4 pb-6', pathList.manage === path ? 'text-orange-400' : 'text-black', 'px-6 pt-4 pb-6'].join(' ')} to="/product-and-service/services/manage">Manage Service (Access Point, IoT, CCTV)</Link>
+              <Link className={['hover:text-orange-400', 'px-6 pt-6 pb-6', pathList.manage === path ? 'text-orange-400' : 'text-black', 'px-6 pt-4 pb-6'].join(' ')} to="/product-and-service/services/manage">Manage Service (Access Point, IoT, CCTV)</Link>
             </div>
             <Link className={['border-b-2 py-4 hover:text-orange-400', pathList.contactUs === path ? 'text-orange-400' : 'text-black'].join(' ')} to="/contact-us">Contact Us</Link>
           </div>

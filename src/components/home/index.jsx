@@ -15,8 +15,8 @@ const Home = () => {
                     <div className="w-full h-auto flex flex-col justify-center ">
                         <h1 className="font-bold text-[28px] mb-4">We Create Benefits and Benefits is Yours</h1>
                         <p className="font-light text-justify">
-                            <b className='font-semibold'>PT. ITCOMNET INDOHADETAMA</b> memberikan berbagai solusi internet yang handal dan berkecepatan tinggi 
-                            dengan layanan serta dukungan support service dengan dedikasi dan profesionalisme yang tinggi.
+                            <b className='font-semibold'>PT. ITCOMNET INDOHADETAMA</b> merupakan perusahaan jasa penyedia ICT (Information Communication and Technology), berpengalaman dalam bidang Wireless, Fiber Optic, Manage Services , VSAT dan Sumber Energi Baru Terbarukan (New Renewable Energy)
+Produk Energi Baru terbarukan untuk berbagai aplikasi perumahan, industry kecil, Perusahaan komersil, Instansi, Pemerintah, Sekolah, distrik dan lain lagi yang sangat inovatif serta senantiasa menawarkan produk produk dengan Teknologi terkini.
                         </p>
                     </div>
                 </div>

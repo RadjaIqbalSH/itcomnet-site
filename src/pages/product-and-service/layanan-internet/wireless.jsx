@@ -27,7 +27,7 @@ const Wireless = () => {
                     background: #FBF9F8;
                     background-image: url("https://www.skyline.net.id/wp-content/uploads/2019/03/05-2.png");
                     background-repeat: repeat;
-                    background-size: auto;
+                    background-size: 60%;
                     background-position: center center;
                     animation: animatedBackground 10s linear infinite;
                 }
